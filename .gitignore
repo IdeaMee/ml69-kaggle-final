@@ -1,0 +1,27 @@
+# Whitelist repo: ignore everything, then allow only model code and the submitted answer files.
+*
+
+# keep git able to descend into folders
+!*/
+
+# folders that must never be tracked (data, env, notes, plans, skills, slides, working outputs)
+.venv/
+data/
+outputs/
+ML_course_export/
+.claude/
+playbooks/
+approaches/
+competitions/
+__pycache__/
+
+# allowed files
+!.gitignore
+!README.md
+!common.py
+!c1/
+!c1/*.py
+!c1/sub_fix200_k10r4.csv
+!r3/
+!r3/*.py
+!r3/sub_soil2.csv
